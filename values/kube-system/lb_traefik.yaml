@@ -1,34 +1,16 @@
-# Default values for Traefik
 imageTag: v1.1.2
 serviceType: ClusterIP
-cpuRequest: 100m
-memoryRequest: 20Mi
-cpuLimit: 100m
-memoryLimit: 30Mi
 ssl:
-  enabled: false
-  enforced: false
+  enabled: true
+  enforced: true
 acme:
-  enabled: false
-  email: admin@example.com
-  staging: true
-  # Save ACME certs to a persistent volume. WARNING: If you do not do this, you will re-request
-  # certs every time a pod (re-)starts and you WILL be rate limited!
+  enabled: true
+  staging: false
+  email: benjamin@techstories.de
   persistence:
-    enabled: false
-    ## If defined, volume.beta.kubernetes.io/storage-class: <storageClass>
-    ## Default: volume.alpha.kubernetes.io/storage-class: default
-    ##
-    # storageClass:
-    accessMode: ReadWriteOnce
-    size: 1Gi
+    size: 1Mi
 dashboard:
   enabled: true
   domain: traefik.kube.techstories.de
-  ingress:
-    annotations:
-      kubernetes.io/ingress.class: "traefik"
 service:
   externalIP: 185.170.112.168
-gzip:
-  enabled: true
