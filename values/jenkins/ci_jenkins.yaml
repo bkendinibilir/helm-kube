@@ -1,0 +1,20 @@
+Master:
+  Name: jenkins-master
+  Image: "gcr.io/kubernetes-charts-ci/jenkins-master-k8s"
+  ImageTag: "v0.6.0"
+  AdminUser: admin
+  Cpu: "200m"
+  Memory: "256Mi"
+  JavaOpts: "-Xms512m -Xmx512m"
+  ServiceType: ClusterIP
+  IngressDomain: jenkins.kube.techstories.de
+
+Agent:
+  Image: jenkinsci/jnlp-slave
+  ImageTag: 2.52
+  Cpu: "200m"
+  Memory: "256Mi"
+
+Persistence:
+  Enabled: true
+  Size: 8Gi
