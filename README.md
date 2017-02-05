@@ -2,7 +2,15 @@
 
 Kubernetes Cluster specific Helm configuration.
 
-## secrets.json
+## setup
+
+Clone [helm charts repo](https://github.com/kwiesmueller/helm).
+
+Fill in your kubernetes context name in [captain.cfg](captain.cfg) and set path to the helm charts repo.
+
+## secrets
+
+Add your secrets in [secrets.json](secrets.json):
 
 ```
 {
@@ -14,3 +22,9 @@ Kubernetes Cluster specific Helm configuration.
     }
 }
 ```
+
+## usage
+
+Apply your changes:
+
+`./captain.py`
