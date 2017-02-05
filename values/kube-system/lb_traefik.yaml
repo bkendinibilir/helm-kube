@@ -14,3 +14,5 @@ dashboard:
   domain: traefik.kube.techstories.de
 service:
   externalIP: 185.170.112.168
+gzip:
+  enabled: false
