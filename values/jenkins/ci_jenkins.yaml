@@ -1,7 +1,7 @@
 Master:
   Name: jenkins-master
-  Image: "gcr.io/kubernetes-charts-ci/jenkins-master-k8s"
-  ImageTag: "v0.6.0"
+  Image: "docker.io/bkendinibilir/jenkins"
+  ImageTag: "2.32.2"
   AdminUser: admin
   Cpu: "200m"
   Memory: "256Mi"
@@ -10,8 +10,8 @@ Master:
   IngressDomain: jenkins.kube.techstories.de
 
 Agent:
-  Image: jenkinsci/jnlp-slave
-  ImageTag: 2.52
+  Image: "docker.io/bkendinibilir/jenkins-slave-jnlp"
+  ImageTag: "latest"
   Cpu: "200m"
   Memory: "256Mi"
 
