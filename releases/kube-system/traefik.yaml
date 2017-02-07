@@ -1,5 +1,7 @@
+chart: local/traefik
 imageTag: v1.1.2
 serviceType: ClusterIP
+externalIP: 185.170.112.168
 ssl:
   enabled: true
   enforced: true
@@ -12,7 +14,5 @@ acme:
 dashboard:
   enabled: true
   domain: traefik.kube.techstories.de
-service:
-  externalIP: 185.170.112.168
 gzip:
   enabled: false

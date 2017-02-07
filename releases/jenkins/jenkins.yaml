@@ -1,3 +1,4 @@
+chart: local/jenkins
 Master:
   Name: jenkins-master
   Image: "docker.io/bkendinibilir/jenkins"
