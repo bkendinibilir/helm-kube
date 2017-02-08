@@ -4,6 +4,7 @@ metadata:
     name: jenkins
     labels:
         app: jenkins
+        volume: jenkins
 spec:
     capacity:
         storage: 8Gi
