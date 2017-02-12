@@ -6,7 +6,7 @@ Kubernetes Cluster specific Helm configuration.
 
 Clone custom [helm charts repo](https://github.com/bkendinibilir/helm-charts).
 
-Fill in your kubernetes context name in [captain.cfg](captain.cfg) and set path to the helm charts repo.
+Fill in your kubernetes context name in [captain.cfg](captain.cfg) and set path to the local helm charts repo.
 
 Install python requirements:
 
@@ -37,6 +37,10 @@ Add your secrets in [secrets.json](secrets.json):
 
 ## usage
 
-Apply your changes:
+Apply all your changes:
 
 `./captain.py`
+
+Apply all manifests and only specific helm releases:
+
+`./captain.py release1 release2`
