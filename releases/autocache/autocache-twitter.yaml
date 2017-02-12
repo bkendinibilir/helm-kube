@@ -1,0 +1,6 @@
+chart: local/autocache-twitter
+image:
+  repository: eu.gcr.io/techstories-155021/autocache-twitter
+  tag: latest
+
+schedule: "15 13 * * *"
