@@ -1,5 +1,5 @@
 chart: local/traefik
-imageTag: v1.1.2
+imageTag: v1.2.1
 serviceType: ClusterIP
 externalIP: 185.170.112.168
 ssl:
