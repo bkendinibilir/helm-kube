@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: poste
+    labels:
+        app: poste
+        volume: poste
+spec:
+    capacity:
+        storage: 20Gi
+    accessModes:
+        - ReadWriteOnce
+    persistentVolumeReclaimPolicy: Retain
+    hostPath:
+        path: /mnt/poste

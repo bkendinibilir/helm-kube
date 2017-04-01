@@ -1,0 +1,15 @@
+chart: local/poste
+
+serviceType: ClusterIP
+externalIP: 185.170.112.168
+ingressDomain: mx.techstories.de
+
+image:
+  repository: docker.io/bkendinibilir/poste.io
+  tag: latest
+  pullPolicy: IfNotPresent
+
+persistence:
+  enabled: true
+  accessMode: ReadWriteOnce
+  size: 20Gi
