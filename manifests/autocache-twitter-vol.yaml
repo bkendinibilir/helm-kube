@@ -12,4 +12,4 @@ spec:
         - ReadWriteOnce
     persistentVolumeReclaimPolicy: Retain
     hostPath:
-        path: /mnt/autocache-twitter
+        path: /volumes/autocache-twitter
