@@ -1,0 +1,29 @@
+chart: local/confluence
+
+image: bkendinibilir/atlassian-confluence:5.10.8
+imagePullPolicy: IfNotPresent
+
+serviceType: ClusterIP
+ingressDomain: wiki.techstories.de
+
+maxMemoryJVM: 2G
+
+resources:
+  requests:
+    memory: 3Gi
+    cpu: 1
+  limits:
+    memory: 4Gi
+    cpu: 4
+
+persistence:
+  enabled: true
+  size: 20Gi
+  
+postgresql:
+  imageTag: "9.4"
+  cpu: 500m
+  memory: 512Mi
+
+  persistence:
+    size: 10Gi
