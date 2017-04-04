@@ -2,8 +2,8 @@ chart: local/gitlab-ce
 image: gitlab/gitlab-ce:8.14.4-ce.0
 # imagePullPolicy: latest
 # gitlabRootPassword:
-ingressDomain: gitlab.kube.techstories.de
-externalUrl: http://gitlab.kube.techstories.de
+ingressDomain: gitlab.techstories.de
+externalUrl: http://gitlab.techstories.de
 serviceType: ClusterIP
 resources:
   requests:

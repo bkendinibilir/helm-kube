@@ -8,7 +8,7 @@ Master:
   Memory: "256Mi"
   JavaOpts: "-Xms512m -Xmx512m"
   ServiceType: ClusterIP
-  IngressDomain: jenkins.kube.techstories.de
+  IngressDomain: jenkins.techstories.de
 
 Agent:
   Image: "docker.io/bkendinibilir/jenkins-slave-jnlp"
