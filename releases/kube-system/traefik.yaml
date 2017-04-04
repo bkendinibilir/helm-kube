@@ -13,6 +13,6 @@ acme:
     size: 1Mi
 dashboard:
   enabled: true
-  domain: traefik.kube.techstories.de
+  domain: traefik.techstories.de
 gzip:
   enabled: false
