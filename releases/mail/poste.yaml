@@ -1,7 +1,7 @@
 chart: local/poste
 
 serviceType: ClusterIP
-externalIP: 185.170.112.168
+hostPort: true
 ingressDomain: mx.techstories.de
 
 image:

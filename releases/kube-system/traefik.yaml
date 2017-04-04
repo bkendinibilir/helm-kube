@@ -1,7 +1,7 @@
 chart: local/traefik
 imageTag: v1.2.1
 serviceType: ClusterIP
-externalIP: 185.170.112.168
+hostPort: true
 ssl:
   enabled: true
   enforced: true
